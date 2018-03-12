@@ -3,6 +3,7 @@
 * Студент: [Инесса Кузнецова](https://up.htmlacademy.ru/htmlcss/20/user/667135).
 * Наставник: [Влад Башилов](https://up.htmlacademy.ru/htmlcss/20/user/167603).
 
+
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
