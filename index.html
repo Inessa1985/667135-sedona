@@ -14,7 +14,7 @@
            <li><a href="info.html">Информация</a></li>
            <li><a href="foto_video.html">Фото и видео</a></li>
            <li><a href="map.html">Карта Штата</a></li>
-           <li><a href="hotels.html">Гостиницы</a></li>
+           <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -60,7 +60,7 @@
         <div>
             <div>Там есть мост дьявола</div>
             <div>- №2 -</div>
-            <div>Да, по нему можно пройти! Если конечно вы осмелитесь</div>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
       </section>
       <section class="features-item features-alt">
@@ -83,23 +83,19 @@
       <div>
             <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-            <button type="button">Поиск гстиницы в Седоне</button>
+            <button type="button">Поиск гостиницы в Седоне</button>
       </div>
       <div class="form_holder">
-          <form action="https://....ru" method="post">
-              <label>
-                Дата заезда<input type="text" name="data_arrive">
-              </label>
-              <label>
-                Дата выезда<input type="text" name="data_depart">
-              </label>
-              <label>
-                Взрослые<input type="text" name="number_adults">
-              </label>
-              <label>
-                Дети<input type="text" name="number_child">
-              </label>
-              <input type="submit" name="search" value="Найти">
+          <form action="https://echo.htmlacademy.ru" method="post">
+              <label for="data_arrive">Дата заезда</label>
+               <input type="date" id="data_arrive" name="data_arrive">
+              <label for="data_depart">Дата выезда</label>
+               <input type="date" id="data_depart" name="data_depart">
+              <label for="number_adults">Взрослые</label>
+               <input type="text" id="number_adults" name="number_adults">
+              <label for="number_child">Дети</label>
+                <input type="text" id="number_child" name="number_child">
+              <button type="submit" name="search">Найти</button>
           </form>
       </div>
       <div class="map">
@@ -114,18 +110,18 @@
            <nav class="socials">
              <ul>
                 <li>
-                  <a href="#twitter" class="social-btn social-btn-tw"><img width="50" height="50"src="twitter.png" alt="twitter"></a>
+                  <a href="https://twitter.com/SedonaAZ" class="social-btn social-btn-tw"><img width="50" height="50"src="twitter.png" alt="Твиттер"></a>
                 </li>
                 <li>
-                  <a href="#facebook" class="social-btn social-btn-fb"><img width="50" height="50" src="facebook.png" alt="facebook"></a>
+                  <a href="https://www.facebook.com/VisitSedona" class="social-btn social-btn-fb"><img width="50" height="50" src="facebook.png" alt="Фейсбук"></a>
                 </li>
                 <li>
-                  <a href="#youtube" class="social-btn social-btn-yt"><img width="50" height="50" src="youtube.png" alt="youtube"></a>
+                  <a href="https://www.youtube.com/user/SedonaAZ1" class="social-btn social-btn-yt"><img width="50" height="50" src="youtube.png" alt="Ютуб"></a>
                 </li>
              </ul>
            </nav>
            <section class="copyright">
-             <a href="http://keksby.ru">WEBSITE BY
+             <a href="https://htmlacademy.ru">WEBSITE BY
                 <img src="img/logo_html.svg" alt="html_academy" width="115" height="41">
              </a>
            </section>
