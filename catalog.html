@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header container">
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="img/logo-sedona.png" width="138" height="70" alt="Логотип City of Sedona">
+          <img src="img/logo_sedona.png" width="138" height="70" alt="Логотип City of Sedona">
         </a>
         <h2 class="visually-hidden">Навигация сайта</h2>
         <ul class="site-navigation">
@@ -19,10 +20,10 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="container">
           <div class="form__holder">
               <h2 class="visually-hidden">Фильтры</h2>
-              <form action="https://echo.htmlacademy.ru">
+              <form action="https://echo.htmlacademy.ru" class="search-form">
                   <div>
                       <h3>Инфрастурктура</h3>
                       <ul>
@@ -157,7 +158,7 @@
             </div>
           </section>
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer container">
             <section class="info">
                <p>#VISITSEDONA</p>
              </section>
@@ -165,13 +166,22 @@
                <h2 class="visually-hidden">Мы в соцсетях</h2>
                <ul>
                   <li>
-                    <a class="social-button" href="https://twitter.com/SedonaAZ"><span class="visually-hidden">Твиттер</span></a>
+                    <a class="social-button twitter" href="https://twitter.com/SedonaAZ">
+                      <img src="img/twitter.svg" width="20" height="20">
+                      <span class="visually-hidden">Твиттер</span>
+                    </a>
                   </li>
                   <li>
-                    <a class="social-button" href="https://www.facebook.com/VisitSedona"><span class="visually-hidden">Фейсбук</span></a>
+                    <a class="social-button facebook" href="https://www.facebook.com/VisitSedona">
+                      <img src="img/facebook.svg" width="20" height="20">
+                      <span class="visually-hidden">Фейсбук</span>
+                    </a>
                   </li>
                   <li>
-                    <a class="social-button" href="https://www.youtube.com/user/SedonaAZ1"><span class="visually-hidden">Ютуб</span></a>
+                    <a class="social-button youtube" href="https://www.youtube.com/user/SedonaAZ1">
+                      <img src="img/youtube.svg" width="20" height="20">
+                      <span class="visually-hidden">Ютуб</span>
+                    </a>
                   </li>
                </ul>
              </nav>
