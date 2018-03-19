@@ -1,3 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #ffffff;
+  }
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  list-style: none;
+  color: #000000;
+}
+
+.main__titile h1 {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+.main__titile p {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.features-item h3 {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.features-item p {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  text-align: center;
+}
+
+a.nav__link--active {
+  color: #766357;
+}
+
+div.blue {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+section.features-alt {
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
 .arrows {
   margin: 0;
   padding: 0
@@ -62,6 +137,7 @@
 .twitter:hover, .youtube:hover, .facebook:hover {
   background: rgb(102, 158, 192);
 }
+
 .twitter:visited, .youtube:visited, .facebook:visited {
   background: rgb(84, 150, 189);
 }
