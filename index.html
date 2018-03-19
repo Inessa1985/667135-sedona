@@ -15,10 +15,10 @@
         </a>
         <h2 class="visually-hidden">Навигация сайта</h2>
         <ul class="site-navigation">
-           <li><a href="info.html">Информация</a></li>
-           <li><a href="foto_video.html">Фото и видео</a></li>
-           <li><a href="map.html">Карта Штата</a></li>
-           <li><a href="catalog.html">Гостиницы</a></li>
+           <li><a class="navigation-link" href="info.html">Информация</a></li>
+           <li><a class="navigation-link" href="foto_video.html">Фото и видео</a></li>
+           <li><a class="navigation-link" href="map.html">Карта Штата</a></li>
+           <li><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -44,17 +44,17 @@
       </section>
       <section class="features-item white">
           <div>
-             <span><img src="img/house.svg" alt="Логотип Жилье" width="75" height="72"></span>
+             <span class="icon"><img src="img/house.svg" alt="Логотип Жилье" width="75" height="72"></span>
              <h3>Жилье</h3>
              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div>
-             <span><img src="img/food.svg" alt="Логотип Еда" width="74" height="70"></span>
+             <span class="icon"><img src="img/food.svg" alt="Логотип Еда" width="74" height="70"></span>
              <h3>Еда</h3>
              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
            <div>
-             <span><img src="img/souvenir.svg" alt="Логотип Сувениры" width="64" height="76"></span>
+             <span class="icon"><img src="img/souvenir.svg" alt="Логотип Сувениры" width="64" height="76"></span>
              <h3>Сувениры</h3>
              <p>Не только китайского, но и местного производства!</p>
            </div>
@@ -86,21 +86,21 @@
              <p>Большинство едет в Гранд Каньон и толпится там</p>
           </div>
       </section>
-      <div>
-            <h2>Заинтересовались?</h2>
+      <div class="form_search">
+            <h1>Заинтересовались?</h1>
             <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-            <button type="button">Поиск гостиницы в Седоне</button>
       </div>
       <div class="form_holder">
+          <button class="search-btn">Поиск гостиницы в Седоне</button>
           <form action="https://echo.htmlacademy.ru" method="post">
               <label for="data_arrive">Дата заезда</label>
-               <input type="date" id="data_arrive" name="data_arrive">
+               <input type="text" id="data_arrive" name="data_arrive" class="date" placeholder="24 апреля 2017">
               <label for="data_depart">Дата выезда</label>
-               <input type="date" id="data_depart" name="data_depart">
+               <input type="text" id="data_depart" name="data_depart" class="date" placeholder="4 июля 2017">
               <label for="number_adults">Взрослые</label>
-               <input type="text" id="number_adults" name="number_adults">
+               <input type="text" id="number_adults" name="number_adults" class="adults" placeholder="2">
               <label for="number_child">Дети</label>
-                <input type="text" id="number_child" name="number_child">
+                <input type="text" id="number_child" name="number_child" class="child" placeholder="0">
               <button type="submit" name="search">Найти</button>
           </form>
       </div>
