@@ -92,16 +92,22 @@
       </div>
       <div class="form_holder">
           <button class="search-btn">Поиск гостиницы в Седоне</button>
-          <form action="https://echo.htmlacademy.ru" method="post">
-              <label for="data_arrive">Дата заезда</label>
-               <input type="text" id="data_arrive" name="data_arrive" class="date" placeholder="24 апреля 2017">
-              <label for="data_depart">Дата выезда</label>
-               <input type="text" id="data_depart" name="data_depart" class="date" placeholder="4 июля 2017">
+          <form action="https://echo.htmlacademy.ru" method="post" class="search-btn">
+            <p class="date">
+               <label for="date_arrive">Дата заезда</label>
+               <input type="text" id="date_arrive" name="date_arrive" class="date" placeholder="24 апреля 2017">
+             </p>
+            <p class="date">
+              <label for="date_depart">Дата выезда</label>
+              <input type="text" id="date_depart" name="date_depart" class="date" placeholder="4 июля 2017">
+            </p>
+            <p class="number">
               <label for="number_adults">Взрослые</label>
-               <input type="text" id="number_adults" name="number_adults" class="adults" placeholder="2">
+              <input type="text" id="number_adults" name="number_adults" class="adults" placeholder="2">
               <label for="number_child">Дети</label>
-                <input type="text" id="number_child" name="number_child" class="child" placeholder="0">
-              <button type="submit" name="search">Найти</button>
+              <input type="text" id="number_child" name="number_child" class="child" placeholder="0">
+            </p>
+            <button class="search" type="submit" name="search">Найти</button>
           </form>
       </div>
       <div class="map">
@@ -115,7 +121,7 @@
          </section>
          <nav class="socials">
            <h2 class="visually-hidden">Мы в соцсетях</h2>
-           <ul>
+           <ul class="socials">
               <li>
                 <a class="social-button twitter" href="https://twitter.com/SedonaAZ">
                   <img src="img/twitter.svg" width="20" height="20">
