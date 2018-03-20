@@ -3,40 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header container">
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/logo-sedona.png" width="138" height="70" alt="Логотип City of Sedona">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/logo_sedona.png" width="138" height="70" alt="Логотип City of Sedona">
         </a>
+        <h2 class="visually-hidden">Навигация сайта</h2>
         <ul class="site-navigation">
            <li><a href="info.html" class="nav__link">Информация</a></li>
            <li><a href="foto_video.html" class="nav__link">Фото и видео</a></li>
            <li><a href="map.html" class="nav__link">Карта штата</a></li>
-           <li><a href="hotels.html" class="nav__link nav__link--active">Гостиницы</a></li>
+           <li><a href="catalog.html" class="nav__link nav__link--active">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="container">
           <div class="form__holder">
-              <form action="https://....ru">
+              <h2 class="visually-hidden">Фильтры</h2>
+              <form action="https://echo.htmlacademy.ru" class="search-form">
                   <div>
                       <h3>Инфрастурктура</h3>
                       <ul>
                           <li>
                               <label for="pool-id">
-                                <input id="pool-id" type="checkbox">Бассейн
+                                <input id="pool-id" type="checkbox" name="fiter_pool" checked>Бассейн
                               </label>
                           </li>
                           <li>
                             <label for="parking-id">
-                              <input id="parking-id" type="checkbox">Парковка
+                              <input id="parking-id" type="checkbox" name="fiter_parking">Парковка
                             </label>
                           </li>
                           <li>
                               <label for="internet-id">
-                                <input id="internet-id" type="checkbox">WI-FI
+                                <input id="internet-id" type="checkbox" name="fiter_it">WI-FI
                               </label>
                           </li>
                       </ul>
@@ -47,17 +50,17 @@
                       <ul>
                           <li>
                             <label for="hotel-id">
-                              <input id="hotel-id" type="checkbox">Гостиница
+                              <input id="hotel-id" type="checkbox" name="fiter_hotel" checked>Гостиница
                             </label>
                           </li>
                           <li>
                             <label for="motel-id">
-                              <input id="motel-id" type="checkbox">Мотель
+                              <input id="motel-id" type="checkbox" name="fiter_motel" checked>Мотель
                             </label>
                           </li>
                           <li>
                             <label for="apartment-id">
-                              <input id="apartment-id" type="checkbox">Аппартаменты
+                              <input id="apartment-id" type="checkbox" name="fiter_apartment" checked>Аппартаменты
                             </label>
                           </li>
                       </ul>
@@ -70,7 +73,7 @@
                           <div>до <span>3000</span></div>
                       </div>
                       <div>
-                          <input type="range">
+                          <input type="range" max="3000" name="range">
                       </div>
                       <button type="submit">показать</button>
                   </div>
@@ -86,19 +89,19 @@
                   <li><button>По рейтингу</button></li>
               </ul>
               <ul>
-                  <li><span>Стрелка "вверх"</span></li>
-                  <li><span>Стрелка "вниз"</span></li>
+                  <li><button class="up"></button></li>
+                  <li><button class="down"></button></li>
               </ul>
           </div>
-
+          <h2 class="visually-hidden">Гостиницы каталог</h2>
           <section>
-              <div class="hotel__img"><img src="img/amara_resort&spa.png"width="135" height="90" alt="Фото Отеля"></div>
+              <div class="hotel__img"><img src="img/amara.png"width="135" height="90" alt="Фото Отеля"></div>
               <div class="hotel__desc">
                   <h4>Amara Resort & Spa</h4>
                   <p>Гостиница от 4000 р.</p>
                   <div>
-                      <a href="https://....ru">Подробнее</a>
-                      <a href="https://....ru">Забронировать</a>
+                      <a href="http://www.amararesort.com">Подробнее</a>
+                      <a href="http://www.amararesort.com">Забронировать</a>
                   </div>
               </div>
               <div class="hotel__rating">
@@ -113,13 +116,13 @@
               </div>
           </section>
           <section>
-            <div class="hotel__img"><img src="img/desert_quail_inn.png"width="135" height="90" alt="Фото Отеля"></div>
+            <div class="hotel__img"><img src="img/desert.png"width="135" height="90" alt="Фото Отеля"></div>
             <div class="hotel__desc">
                 <h4>Desert Quail Inn</h4>
                 <p>Мотель от 3000 р.</p>
                 <div>
-                    <a href="https://....ru">Подробнее</a>
-                    <a href="https://....ru">Забронировать</a>
+                    <a href="http://www.desertquailinn.com">Подробнее</a>
+                    <a href="http://reservation.worldweb.com/Bookings-nr105/activity-edit.html?table=hotels&listing_id=1636&mode=command&command=bookingrequestform&hotel_id=1636&num_adults=2">Забронировать</a>
                 </div>
             </div>
             <div class="hotel__rating">
@@ -134,13 +137,13 @@
             </div>
           </section>
           <section>
-            <div class="hotel__img"><img src="img/villas_at_poco_diablo.png" width="135" height="90" alt="Фото Отеля"></div>
+            <div class="hotel__img"><img src="img/villas.png" width="135" height="90" alt="Фото Отеля"></div>
             <div class="hotel__desc">
                 <h4>Villas at Poco Diablo</h4>
                 <p>Аппартаменты от 2000 р.</p>
                 <div>
-                    <a href="https://....ru">Подробнее</a>
-                    <a href="https://....ru">Забронировать</a>
+                    <a href="https://villasatpocodiablo.com/accommodations">Подробнее</a>
+                    <a href="https://www.surveymonkey.com/r/Villasatpocodiablo">Забронировать</a>
                 </div>
             </div>
             <div class="hotel__rating">
@@ -155,28 +158,38 @@
             </div>
           </section>
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer container">
             <section class="info">
                <p>#VISITSEDONA</p>
              </section>
              <nav class="socials">
+               <h2 class="visually-hidden">Мы в соцсетях</h2>
                <ul>
                   <li>
-                    <a href="#twitter" class="social-btn social-btn-tw"><img width="50" height="50"src="twitter.png" alt="twitter"></a>
+                    <a class="social-button twitter" href="https://twitter.com/SedonaAZ">
+                      <img src="img/twitter.svg" width="20" height="20">
+                      <span class="visually-hidden">Твиттер</span>
+                    </a>
                   </li>
                   <li>
-                    <a href="#facebook" class="social-btn social-btn-fb"><img width="50" height="50" src="facebook.png" alt="facebook"></a>
+                    <a class="social-button facebook" href="https://www.facebook.com/VisitSedona">
+                      <img src="img/facebook.svg" width="20" height="20">
+                      <span class="visually-hidden">Фейсбук</span>
+                    </a>
                   </li>
                   <li>
-                    <a href="#youtube" class="social-btn social-btn-yt"><img width="50" height="50" src="youtube.png" alt="youtube"></a>
+                    <a class="social-button youtube" href="https://www.youtube.com/user/SedonaAZ1">
+                      <img src="img/youtube.svg" width="20" height="20">
+                      <span class="visually-hidden">Ютуб</span>
+                    </a>
                   </li>
                </ul>
              </nav>
              <section class="copyright">
-               <a href="http://keksby.ru">WEBSITE BY
+               <a href="https://htmlacademy.ru">WEBSITE BY
                   <img src="img/logo_html.svg" alt="html_academy" width="115" height="41">
                </a>
              </section>
-        </footer>
+          </footer>
   </body>
 </html>
