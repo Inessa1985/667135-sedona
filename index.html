@@ -94,18 +94,22 @@
           <button class="search-btn">Поиск гостиницы в Седоне</button>
           <form action="https://echo.htmlacademy.ru" method="post" class="search-btn">
             <p class="date">
-               <label for="date_arrive">Дата заезда</label>
-               <input type="text" id="date_arrive" name="date_arrive" class="date" placeholder="24 апреля 2017">
-             </p>
+               <label for="date_arrive">Дата заезда:</label>
+               <input type="text" id="date_arrive" name="date_arrive" placeholder="24 апреля 2017">
+            </p>
             <p class="date">
-              <label for="date_depart">Дата выезда</label>
+              <label for="date_depart">Дата выезда:</label>
               <input type="text" id="date_depart" name="date_depart" class="date" placeholder="4 июля 2017">
             </p>
             <p class="number">
-              <label for="number_adults">Взрослые</label>
-              <input type="text" id="number_adults" name="number_adults" class="adults" placeholder="2">
-              <label for="number_child">Дети</label>
-              <input type="text" id="number_child" name="number_child" class="child" placeholder="0">
+              <label for="number_adults">Взрослые:</label>
+              <button class="minus" type="button" aria-label="Уменьшить число гостей на одного">-</button>
+              <input type="text" id="number_adults" name="number_adults" placeholder="2" min="1">
+              <button class="plus" type="button" aria-label="Увеличить число гостей на одного">+</button>
+              <label for="number_child">Дети:</label>
+              <button class="minus" type="button" aria-label="Уменьшить число гостей на одного">-</button>
+              <input type="text" id="number_child" name="number_child" placeholder="0" min="0">
+              <button class="plus" type="button" aria-label="Увеличить число гостей на одного">+</button>
             </p>
             <button class="search" type="submit" name="search">Найти</button>
           </form>
