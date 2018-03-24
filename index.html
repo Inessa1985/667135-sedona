@@ -91,17 +91,37 @@
             <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
       </div>
       <div class="form_holder">
-          <button class="search-btn">Поиск гостиницы в Седоне</button>
-          <form action="https://echo.htmlacademy.ru" method="post">
-              <label for="data_arrive">Дата заезда</label>
-               <input type="text" id="data_arrive" name="data_arrive" class="date" placeholder="24 апреля 2017">
-              <label for="data_depart">Дата выезда</label>
-               <input type="text" id="data_depart" name="data_depart" class="date" placeholder="4 июля 2017">
-              <label for="number_adults">Взрослые</label>
-               <input type="text" id="number_adults" name="number_adults" class="adults" placeholder="2">
-              <label for="number_child">Дети</label>
-                <input type="text" id="number_child" name="number_child" class="child" placeholder="0">
-              <button type="submit" name="search">Найти</button>
+          <p class="search-btn">Поиск гостиницы в Седоне</p>
+          <form class="search-btn" action="https://echo.htmlacademy.ru" method="post">
+            <ul class="date">
+               <li>
+                   <label for="date_arrive">Дата заезда:</label>
+                   <input type="text" id="date_arrive" name="date_arrive" placeholder="24 апреля 2017">
+               </li>
+            </ul>
+            <ul class="date">
+               <li>
+                   <label for="date_depart">Дата выезда:</label>
+                   <input type="text" id="date_depart" name="date_depart" class="date" placeholder="4 июля 2017">
+               </li>
+            </ul>
+            <ul class="number">
+               <li>
+                   <label for="number_adults">Взрослые:</label>
+                   <button class="minus" type="button" aria-label="Уменьшить число гостей на одного">-</button>
+                   <input type="text" id="number_adults" name="number_adults" placeholder="2" min="1">
+                   <button class="plus" type="button" aria-label="Увеличить число гостей на одного">+</button>
+               </li>
+               <li>
+                   <label for="number_child">Дети:</label>
+                   <button class="minus" type="button" aria-label="Уменьшить число гостей на одного">-</button>
+                   <input type="text" id="number_child" name="number_child" placeholder="0" min="0">
+                   <button class="plus" type="button" aria-label="Увеличить число гостей на одного">+</button>
+               </li>
+            </ul>
+            <ul class="search_form">
+              <li><input class="search_form" type="submit" name="search" value="Найти"></input></li>
+            </ul>
           </form>
       </div>
       <div class="map">
@@ -115,7 +135,7 @@
          </section>
          <nav class="socials">
            <h2 class="visually-hidden">Мы в соцсетях</h2>
-           <ul>
+           <ul class="socials">
               <li>
                 <a class="social-button twitter" href="https://twitter.com/SedonaAZ">
                   <img src="img/twitter.svg" width="20" height="20">
