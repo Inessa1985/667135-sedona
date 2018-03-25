@@ -14,8 +14,19 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 21px;
+  line-height: 26px;
+}
+.page-footer {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/*HEADER*/
 .main-header {
-  background: №#ffffff;
+  background: #ffffff;
   position: relative;
   }
 /***********************/
@@ -73,15 +84,7 @@ a {
 /***********************/
 
 
-.arrows {
-  margin: 0;
-  padding: 0
-  }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  }
 /*Выравниваем "СЕДОНА-НЕБЕЛЬНШОЙ ГОРОДОК"*/
 .main__titile {
   display: flex;
@@ -91,37 +94,311 @@ a {
   margin-top: -5px;
 }
 
-/*Выравниваем в Каталоге секцию "ФИЛЬТРЫ"*/
+/*Выравниваем "НАСТОЯЩИЙ ГОРОДОК №1"*/
+.features-item {
+  display: flex;
+  flex-flow: nowrap;
+  /*border: 1px solid red;*/
+}
+
+.features-item .blue {
+  width: 400px;
+  height: 256px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 45px;
+  padding-right: 45px;
+  /*border: 1px solid red;*/
+}
+
+.features-item .blue_img {
+  width: 800px;
+  min-height: 256px;
+  /*border: 1px solid red;*/
+}
+
+/*Выравниваем "ЖИЛЬЕ ... ЕДА ... СУВЕНИРЫ"*/
+.features-item .white {
+  display:flex;
+  margin-top: -5px;
+}
+
+.features-item .white_icon {
+  width: 400px;
+  min-height: 330px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-left: 60px;
+  padding-right: 50px;
+}
+
+.icon {
+  height: 75px;
+  margin-bottom: 30px;
+}
+
+/*Выравниваем "№3 ... №4 ... №5"*/
+.features-item .features-alt {
+  min-height: 256px;
+  display:flex;
+  }
+
+.features-item .features-advantage {
+  width: 400px;
+  min-height: 170px;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 70px;
+  padding-right: 60px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  /*border: 1px solid green;*/
+}
+
+.features-advantage h3 {
+  box-sizing: border-box;
+  padding-left: 55px;
+  padding-right: 55px;
+  /*border: 1px solid black;*/
+}
+
+.features-advantage p {
+  /*border: 1px solid red;*/
+  margin-top: -5px;
+}
+
+/*Выравниваем "ЗАИНТЕРЕСОВАЛИСЬ?"*/
+.form_search {
+  height: 290px;
+  display:flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-left: 380px;
+  padding-right: 380px;
+  box-sizing: border-box;
+}
+
+/*Выравниваем "КАРТу"*/
+.map {
+  display:flex;
+  margin-bottom: -120px;
+}
+
+/*Выравниваем "ФОРМу ПОИСКа"*/
+.form_holder {
+  margin: -679px auto;
+  position: relative;
+  min-height: 481px;
+  box-shadow: 0px 0px 10px black;
+  }
+form.search-btn {
+  width: 568px;
+  min-height: 395px;
+  padding-left: 20px;
+  }
+
+/* Выравнтваем секцию в каталоге "НАЙДЕНО"*/
+.sorting_filter {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 85px;
+  box-sizing: border-box;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.sorting_search {
+  width: 135px;
+  display: flex;
+  align-items: center;
+}
+
+.sorting {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 365px;
+}
+
+.up-down {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 530px;
+}
+
+/*Выравниваем секцию в Каталоге "ФИЛЬТРЫ"*/
 .filter-form {
   display: flex;
+  flex-wrap: nowrap;
   height: 217px;
 }
 
 .infrast {
-  margin-top: 25px;
-  margin-right: 100px;
+  margin-left: -25px;
+  /*outline: 1px solid yellow;*/
 }
 
 .type {
-  margin-top: 25px;
-  }
-
-.filter-price-form {
-  margin-top: 30px;
+  margin-left: 70px;
+  /*outline: 1px solid yellow;*/
 }
 
-section.hotel_catalog {
+div.filter-price-form {
+   /*border: 1px solid #17F762;*/
+    margin-left: 255px;
+}
+
+
+/*Выравниваем секцию в каталоге "КАТАЛОГ ОТЕЛЕЙ"*/
+.hotel_catalog {
+  padding-left: 70px;
   display: flex;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  align-items: center;
   min-height: 150px;
   justify-content: flex-start;
+  /*border: 1px solid black;*/
+
+}
+.hotel__img {
+  /*border: 1px solid yellow;*/
 }
 
+div.hotel__desc {
+  width: 335px;
+  height: 90px;
+  display: inline-table;
+  justify-content: flex-start;
+  margin-left: 30px;
+  /*padding-left: 30px*/
+  /*border: 1px solid red;*/
 
+}
+.hotel__desc h4 {
+  margin-top: -5px;
+  margin-bottom: -5px;
+  /*border: 1px solid black;*/
+}
+.hotel__desc p {
+  margin-bottom: 9px;
+  /*border: 1px solid black;*/
+}
+
+div.hotel__book {
+ margin: none;
+ /*border: 1px solid black;*/
+}
+
+/*Сетка рейтинга ОТЕЛЕЙ*/
+.hotel__rating {
+ width: 520px;
+ height: 90px;
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ margin-left: 40px;
+ /*border: 1px solid green;*/
+}
+
+.hotel__rating ul {
+ width: 110px;
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-end;
+ align-items: flex-start;
+ margin-left: 368px;
+ margin-top: 0px;
+ /*border: 1px solid blue;*/
+}
+
+div.hotel__rating_number {
+ display: flex;
+ justify-content: center;
+ margin-left: 409px;
+ /*border: 1px solid blue;*/
+}
+
+/*Выравниваем "FOOTER"*/
+.page-footer {
+  display: flex;
+  /*padding: 40px 0;*/
+  justify-content: space-around;
+  position: relative;
+  box-sizing: border-box;
+  height: 120px;
+  /*border: 1px solid indigo;*/
+  }
+
+.info {
+  margin: 0;
+  padding: 10px 58px;
+  width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*border: 1px solid SlateGray;*/
+}
+
+.socials {
+  display: flex;
+  width: 400px;
+  align-items: center;
+  /*border: 1px solid red;*/
+}
+
+ul.socials {
+  display: flex;
+  align-items: center;
+  padding-left: 90px;
+  /*border: 1px solid blue;*/
+}
+.copyright {
+  margin-right: 30px;
+  width: 240px;
+  display: flex;
+  align-items: center;
+  /*border: 1px solid green;*/
+}
+.copyright div {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-decoration: none;
+  /*border: 1px solid green;*/
+}
+
+.copyright a {
+  /*border: 1px solid blue;*/
+}
+
+.facebook {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.twitter, .youtube, .facebook {
+  width: 46px;
+  height: 48px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  /*border: 1px solid black;*/
+}
 
 
 
 .navigation-link {
-  font-szie: 14px;
+  font-size: 14px;
   font-weight: bold;
   text-decoration: none;
   color: #000000;
@@ -177,8 +454,9 @@ section.hotel_catalog {
 
 }
 .form_search h1 {
-  font-size: 24px;
+  font-size: 26px;
   line-height: 26px;
+  font-weight: bold;
   text-align: center;
 }
 .form_search p {
@@ -206,7 +484,7 @@ a.nav__link--active {
 section.white,
 div.main__titile,
 div.form_search,
-.page-footer,
+.page-footer .container,
 .sorting_filter,
 .hotel_catalog,
 .hotel__rating {
@@ -242,36 +520,36 @@ section.features-alt {
   font-size: 14px;
   line-height: 26px;
   width: 568px;
-  height: 395px;
+  height: 481px;
   font-weight: bold;
   background-color: #ffffff;
 }
 
 /*Кнопка "Поиск гостиницы в Седоне"*/
-p.search-btn {
+button.search-btn {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
   width: 568px;
-  height: 54px;
+  height: 86px;
   font-weight: 700;
   text-align: center;
+  text-transform: uppercase;
   background-color: #766357;
-  padding-top: 34px;
   border: none;
-  }
+}
 
-p.search-btn:hover {
+button.search-btn:hover {
   background-color: #604e43;
 }
 
-p.search-btn:focus {
+button.search-btn:focus {
   background-color: #503e33;
   color: #857871;
 }
-/*Кнопка "НАЙТИ"*/
 
+/*Кнопка "НАЙТИ"*/
 ul.search_form input.search_form {
   font-family: "PT Sans", sans-serif;
   font-size: 21px;
@@ -328,7 +606,6 @@ ul.search_form input.search_form:focus {
   color: #000000;
   border: 2px solid #e5e5e5;
   }
-
 
 /*кнопки формы поиска "Взрослые" и "Дети"*/
 .number input::placeholder {
@@ -422,23 +699,14 @@ ul.search_form input.search_form:focus {
 .sorting_rating:hover {
   color: #81b3d2;
   }
+
 .sorting_type:focus,
 .sorting_rating:focus {
   color: #000000;
   border: none;
 }
-div.hotel__rating {
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 18px;
-  color: #666666;
-  width: 110px;
-  height: 27px;
-  border: none;
-  background-color: #f2f2f2;
-  text-align: center;
-  padding-top: 5px;
-}
+
+
 
 /*Стрелки "Вверх" и "Вниз" в каталоге*/
 /*Стрелка "Вниз"*/
@@ -451,12 +719,15 @@ div.hotel__rating {
   border-color: transparent transparent #cacaca transparent;
   background-color: #ffffff;
  }
+
  .down:hover {
   border-color: transparent transparent #231f20 transparent;
   }
+
 .down:focus {
   border-color: transparent transparent #81b3d2 transparent;
   }
+
 .down.active {
   border-color: transparent transparent #81b3d2 transparent;
  }
@@ -482,12 +753,28 @@ div.hotel__rating {
 
 /*КАТАЛОГ Отелей в каталоге*/
 .hotel_catalog {
-  display: block;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
   background-color: #ffffff;
   }
 
+div.hotel__rating {
+  background-color: #ffffff;
+}
+
+/*Рейтинг отелей*/
+.hotel__rating_number {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  width: 110px;
+  height: 22px;
+  color: #666666;
+  border: none;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding-top: 5px;
+}
 
 /*"Гостиница от .....р."*/
 .hotel__desc p {
@@ -553,13 +840,13 @@ div.hotel__rating {
   height: 0;
   opacity: 0;
 }
+/*CЕТКА Главной страницы СЕДОНы*/
+
+
 
 /*СОЦСЕТИ*/
-.twitter, .youtube, .facebook {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: rgb(129, 179, 0);
+.page-footer {
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .twitter:link, .youtube:link, .facebook:link {
@@ -574,10 +861,7 @@ div.hotel__rating {
   background: rgb(84, 150, 189);
 }
 
-.container {
-  font-size: 21px;
-  line-height: 26px;
-  }
+
 
 /*ФИЛЬТРЫ в каталоге(подключаем фон)*/
 .form__holder,
@@ -593,8 +877,8 @@ section.filter {
   padding-left: 73px;
   padding-bottom: 29px;
 }
-/*ФИЛЬТРЫ*/
 
+/*ФИЛЬТРЫ*/
 legend {
   font-family: inherit;
   font-size: 16px;
