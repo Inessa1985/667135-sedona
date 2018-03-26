@@ -83,8 +83,6 @@ a {
 }
 /***********************/
 
-
-
 /*Выравниваем "СЕДОНА-НЕБЕЛЬНШОЙ ГОРОДОК"*/
 .main__titile {
   display: flex;
@@ -192,6 +190,7 @@ a {
 
 /*Выравниваем "ФОРМу ПОИСКа"*/
 .form_holder {
+  /*margin: 80px auto;*/
   margin: -679px auto;
   position: relative;
   min-height: 481px;
@@ -201,6 +200,7 @@ form.search-btn {
   width: 568px;
   min-height: 395px;
   padding-left: 20px;
+  /*position: fixed;*/
   }
 
 /* Выравнтваем секцию в каталоге "НАЙДЕНО"*/
@@ -211,6 +211,9 @@ form.search-btn {
   box-sizing: border-box;
   padding-left: 70px;
   padding-right: 70px;
+}
+.sorting_filter span {
+  margin-left: 5px;
 }
 
 .sorting_search {
@@ -230,16 +233,19 @@ form.search-btn {
 .up-down {
   display: flex;
   flex-wrap: nowrap;
-  flex-direction: row-reverse;
+  justify-content: flex-end;
   align-items: center;
   width: 530px;
+}
+.up {
+  margin-right: 12px;
 }
 
 /*Выравниваем секцию в Каталоге "ФИЛЬТРЫ"*/
 .filter-form {
   display: flex;
   flex-wrap: nowrap;
-  height: 217px;
+  /*height: 217px;*/
 }
 
 .infrast {
@@ -287,17 +293,45 @@ div.hotel__desc {
 .hotel__desc h4 {
   margin-top: -5px;
   margin-bottom: -5px;
-  /*border: 1px solid black;*/
+  /*border: 1px solid blue;*/
 }
-.hotel__desc p {
-  margin-bottom: 9px;
+
+.hotel__desc_info {
+  display: flex;
+  justify-content: flex-start;
+  /*border: 1px solid blue;*/
+}
+.hotel__info {
+  margin-right: 6px;
+  /*border: 1px solid red;*/
+}
+.hotel__book {
+  margin: none;
+  /*border: 1px solid red;*/
+}
+
+.hotel__info p {
+  padding: 0;
+  margin-bottom: 10px;
+ /*border: 1px solid green;*/
+}
+
+.hotel__book p {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  margin-bottom: 10px;
   /*border: 1px solid black;*/
 }
 
+
+
+
+/*
 div.hotel__book {
- margin: none;
- /*border: 1px solid black;*/
-}
+
+ border: 1px solid grey;
+}*/
 
 /*Сетка рейтинга ОТЕЛЕЙ*/
 .hotel__rating {
@@ -316,16 +350,20 @@ div.hotel__book {
  flex-direction: row;
  justify-content: flex-end;
  align-items: flex-start;
- margin-left: 368px;
+ margin-left: 375px;
  margin-top: 0px;
  /*border: 1px solid blue;*/
 }
 
 div.hotel__rating_number {
- display: flex;
- justify-content: center;
- margin-left: 409px;
- /*border: 1px solid blue;*/
+  margin-left: 409px;
+  /*display: flex;
+  justify-content: center;
+  border: 1px solid blue;*/
+}
+
+.star__active {
+  margin-left: 5px;
 }
 
 /*Выравниваем "FOOTER"*/
@@ -369,11 +407,13 @@ ul.socials {
   align-items: center;
   /*border: 1px solid green;*/
 }
-.copyright div {
+.copyright-from {
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
   text-decoration: none;
+  margin-top: -10px;
+  margin-right: 5px;
   /*border: 1px solid green;*/
 }
 
@@ -394,8 +434,6 @@ ul.socials {
   justify-content: center;
   /*border: 1px solid black;*/
 }
-
-
 
 .navigation-link {
   font-size: 14px;
@@ -709,47 +747,52 @@ ul.search_form input.search_form:focus {
 
 
 /*Стрелки "Вверх" и "Вниз" в каталоге*/
-/*Стрелка "Вниз"*/
-.down {
+/*Стрелка "ВВЕРХ"*/
+.up {
   padding: 0px;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 7px 7px 7px;
+  border-width: 0 5px 10px 5px;
   border-color: transparent transparent #cacaca transparent;
   background-color: #ffffff;
  }
 
- .down:hover {
+ .up:hover {
   border-color: transparent transparent #231f20 transparent;
   }
 
-.down:focus {
+.up:focus {
   border-color: transparent transparent #81b3d2 transparent;
   }
 
-.down.active {
+/*
+.up.active {
   border-color: transparent transparent #81b3d2 transparent;
- }
+ }*/
 
- /*Стрелка "Вверх"*/
- .up {
+ /*Стрелка "ВНИЗ"*/
+ .down {
    padding: 0px;
    width: 0;
    height: 0;
    border-style: solid;
-   border-width: 7px 7px 0 7px;
+   border-width: 10px 5px 0 5px;
    border-color: #cacaca transparent transparent transparent;
    background-color: #ffffff;
    }
-
- .up:hover {
+/*
+ .down:hover {
    border-color: #231f20 transparent transparent transparent;
    }
 
- .up:focus {
+ .down:focus {
    border-color: #81b3d2 transparent transparent transparent;
    }
+*/
+ .down.active {
+     border-color: #81b3d2 transparent transparent transparent;
+     }
 
 /*КАТАЛОГ Отелей в каталоге*/
 .hotel_catalog {
@@ -773,7 +816,7 @@ div.hotel__rating {
   border: none;
   background-color: #f2f2f2;
   text-align: center;
-  padding-top: 5px;
+  padding: 3px 5px;
 }
 
 /*"Гостиница от .....р."*/
@@ -784,6 +827,29 @@ div.hotel__rating {
   color: #333333;
 }
 
+.hotel_name {
+  display: block;
+  padding: 0 auto;
+  font-family: inherit;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  margin-left: -5px;
+}
+
+.hotel_name:hover {
+  color: #abcce1;
+}
+
+.hotel_name:focus {
+  color: #b2b2b2;
+  cursor: pointer;
+}
+
 /*кнопка "Подробнее" в каталоге*/
 .more_info {
   font-family: "PT Sans", Arial, sans-serif;
@@ -791,11 +857,18 @@ div.hotel__rating {
   font-weight: 600;
   line-height: 21px;
   color: #ffffff;
-  padding-top: 5px;
+  width: 110px;
+  height: 27px;
+  background-color: #81b3d2;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  /*padding-top: 5px;
   padding-right: 16px;
   padding-bottom: 3px;
-  padding-left: 16px;
-  background-color: #81b3d2;
+  padding-left: 16px;*/
+
 }
 
 .more_info:hover {
@@ -816,11 +889,18 @@ div.hotel__rating {
   font-weight: 600;
   line-height: 21px;
   color: #ffffff;
-  padding-top: 5px;
+  width: 142px;
+  height: 27px;
+  background-color: #766357;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  /*padding-top: 5px;
   padding-right: 16px;
   padding-bottom: 3px;
-  padding-left: 16px;
-  background-color: #766357;
+  padding-left: 16px;*/
+
 }
 .book:hover {
   font-family: "PT Sans", Arial, sans-serif;
@@ -840,31 +920,43 @@ div.hotel__rating {
   height: 0;
   opacity: 0;
 }
-/*CЕТКА Главной страницы СЕДОНы*/
-
-
 
 /*СОЦСЕТИ*/
 .page-footer {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-.twitter:link, .youtube:link, .facebook:link {
-  background: rgb(129, 179, 210);
+.twitter:link,
+.youtube:link,
+.facebook:link {
+  background: #81b3d2;
 }
 
-.twitter:hover, .youtube:hover, .facebook:hover {
-  background: rgb(102, 158, 192);
+.twitter:hover,
+.youtube:hover,
+.facebook:hover {
+  background: #669ec0;
 }
 
-.twitter:visited, .youtube:visited, .facebook:visited {
-  background: rgb(84, 150, 189);
+.twitter:focus path,
+.youtube:focus path,
+.facebook:focus path {
+  fill: #88b6d1;
+  background: #5496bd;
 }
-
-
+.copyright a {
+  width: 115px;
+  height: 41px;
+}
+.copyright a:hover  path {
+  fill: #81b3d2;
+}
+.copyright a:focus  path {
+  fill: #bdbbbc;
+}
 
 /*ФИЛЬТРЫ в каталоге(подключаем фон)*/
-.form__holder,
+/*.form__holder,*/
 section.filter {
   display: flex;
   align-items: flex-start;
@@ -875,7 +967,7 @@ section.filter {
   padding-top: 30px;
   padding-right: 73px;
   padding-left: 73px;
-  padding-bottom: 29px;
+  /*padding-bottom: 29px;*/
 }
 
 /*ФИЛЬТРЫ*/
@@ -903,7 +995,6 @@ fieldset.type {
   line-height: 21px;
   margin-bottom: 28px;
 }
-
 
 .filter label {
   position: relative;
@@ -935,10 +1026,14 @@ input[type="checkbox"]:checked ~ label::after {
   border-right: none;
   transform: rotate(-45deg);
 }
+input[type="checkbox"]:disabled ~ label::before,
+input[type="checkbox"]:disabled ~ label::after {
+  border-color: #787676;
+}
 
 .filter-price-form {
   width: 330px;
-  text-align: center;
+  margin: 50px auto;
 }
 
 .show-button {
@@ -962,22 +1057,30 @@ input[type="checkbox"]:checked ~ label::after {
 }
 
 .filter-range {
-  width: 300px;
+  width: 314px;
   margin: 0 auto;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
+  padding: 0;
+  margin-bottom: 10px;
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
 }
+/*.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding: 0;
+  padding-left: 65px;
+}*/
 
 .price-controls {
   position: relative;
   height: 36px;
+  width: 314px;
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #ffffff;
@@ -1012,6 +1115,12 @@ input[type="checkbox"]:checked ~ label::after {
   vertical-align: top;
   cursor: pointer;
 }
+/* ==================== */
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
 
 .range-controls {
   position: relative;
@@ -1020,6 +1129,7 @@ input[type="checkbox"]:checked ~ label::after {
 
 .range-controls .scale {
   height: 2px;
+  width: 314px;
   background: rgba(255, 255, 255, 0.3);
 }
 
