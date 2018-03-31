@@ -1,11 +1,12 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
   color: #000000;
+  width: 1200px;
   text-transform: uppercase;
   background-color: #f2f2f2;
 }
@@ -16,9 +17,10 @@ a {
 
 .container {
   margin: 0 auto;
-  width: 1200px;
   font-size: 21px;
   line-height: 26px;
+  width: 1200px;
+  /*height: 200px;*/
   box-shadow: 0px 0px 20px grey;
 }
 
@@ -58,9 +60,9 @@ a {
 /**HEADER**/
 
 .main-header {
-  margin: 0 auto;
   position: relative;
-  background: #ffffff;
+  margin: 0 auto;
+  width: 1200;
 }
 
 .main-header-logo {
@@ -78,71 +80,58 @@ a {
   background-color: #ffffff;
 }
 
-.main-navigation li {
+.site-navigation-li {
   line-height: 56px;
   text-transform: uppercase;
   text-align: center;
   width: 239px;
-  height: 56px;
 }
 
-.main-navigation li:nth-child(2) {
+.site-navigation-li:nth-child(2) {
   margin-right: auto;
 }
 
-.main-navigation li:nth-child(3) {
+.site-navigation-li:nth-child(3) {
   margin-left: auto;
 }
 
 .site-navigation {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  list-style: none;
   min-height: 56px;
   display: flex;
   justify-content: space-between;
   background-color: #ffffff;
 }
 
-.site-navigation {
-  list-style: none;
-}
-
-.site-navigation a {
-  color: #000000;
-}
-
-.site-navigation a:hover {
-  color: #81b3d2;
-}
-
-.site-navigation a:active {
-  color: #b2b2b2;
-}
-
-.site-navigation .nav-link-active {
-  color: #766357;
-}
-
 .nav-link {
+  margin: 0 auto;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
   text-decoration: none;
+  text-transform: uppercase;
   color: #000000;
 }
 
 .nav-link:hover {
-  font-size: 14px;
-  font-family: "PT Sans", Arial, sans-serif;
   color: #81b3d2;
-  text-transform: uppercase;
 }
+
+.nav-link:focus {
+  color: #b2b2b2;
+}
+
+.nav-link-active {
+  color: #766357;
+}
+
 
 /**FOOTER**/
 
 .page-footer {
   margin: 0 auto;
-  padding: 26.1px 0;
+  padding: 26px 0;
   display: flex;
   justify-content: space-around;
   position: relative;
@@ -210,15 +199,9 @@ a {
 }
 
 .copyright a {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 600;
   width: 115px;
   height: 41px;
-  list-style: none;
-  color: #000000;
+  display: block;
 }
 
 .copyright a:hover path {
@@ -242,12 +225,16 @@ a {
 /*** INDEX ***/
 
 /*Выравниваем "СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК"*/
+.main-img {
+  margin: 0 auto;
+  display: flex;
+}
+
 .main-titile {
   display: flex;
   justify-content: center;
   flex-direction: column;
   min-height: 216px;
-  margin-top: -7px;
 }
 
 .main-titile h1 {
@@ -266,7 +253,11 @@ a {
 /*Выравниваем "НАСТОЯЩИЙ ГОРОДОК №1"*/
 .features-item {
   display: flex;
-  flex-flow: nowrap;
+  align-items: flex-start;
+}
+
+.features-item img {
+  display: block;
 }
 
 .features-item .blue {
@@ -275,15 +266,18 @@ a {
   padding-left: 45px;
   padding-right: 45px;
   padding-bottom: 52px;
+  color: #ffffff;
   width: 400px;
-  display: flex;
+  display: block;
   justify-content: center;
   flex-direction: column;
+  background-color: #81b3d2;
 }
+
 
 .features-item h3 {
   margin: 0;
-  padding: 0 60px;
+  padding: 0 75px;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
@@ -296,6 +290,7 @@ a {
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
+  align-self: center;
   text-align: center;
 }
 
@@ -329,12 +324,6 @@ a {
   margin-bottom: 30px;
   height: 75px;
   background-position: 162px 60px;
-}
-
-/*Секция "Там есть мост дьявола №2"*/
-.features-item .blue {
-  color: #ffffff;
-  background-color: #81b3d2;
 }
 
 /*Секция "№3...№4...№5..."*/
@@ -483,17 +472,17 @@ a {
 }
 
 .date-input {
-  font: inherit;
-  color: #000000;
-  text-align: left;
-  text-transform: uppercase;
   margin: 0;
   padding: 0;
   padding-left: 10px;
-  width: 308px;
-  height: 38px;
+  font: inherit;
   font-size: 14px;
   font-weight: 700;
+  color: #000000;
+  text-align: left;
+  text-transform: uppercase;
+  width: 308px;
+  height: 38px;
   box-sizing: border-box;
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
@@ -578,6 +567,7 @@ a {
   justify-content: flex-end;
   box-sizing: border-box;
 }
+
 .number-child {
   margin: 0;
   padding: 0;
@@ -688,10 +678,28 @@ a {
 }
 
 /*КАРТА*/
+/*
 .map {
   margin: 0 auto;
-  margin-bottom: -118px;
+  margin-bottom: -119px;
   display: flex;
+}*/
+
+.map img {
+  margin: 0 auto;
+  margin-bottom: -120px;
+  width: 1200px;
+  height: 473px;
+  display: none;
+
+}
+
+iframe {
+  margin: 0 auto;
+  margin-bottom: -120px;
+  border: none;
+  width: 1200px;
+  height: 593px;
 }
 
 
@@ -701,6 +709,7 @@ a {
 .filter {
   margin: 0 auto;
   padding: 0;
+  width: 1200;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -711,10 +720,9 @@ a {
 }
 
 .filter-form {
-  margin: 0 auto;
+  margin: 0 auto 0 68px;
   padding: 0;
-  padding-left: 63px;
-  padding-top: 22px;
+  padding-top: 25px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -753,12 +761,6 @@ a {
   width: 500px;
 }
 
-.filter-price-form {
-  margin: 0;
-  padding: 0;
-  width: 330px;
-}
-
 /*Фильтры*/
 .infrast-legend,
 .type-legend {
@@ -774,18 +776,19 @@ a {
 
 .filter-option,
 .min-price,
-.max-price    {
+.max-price {
+  margin-bottom: 28px;
   font-size: 14px;
   font-weight: 500;
   line-height: 21px;
-  margin-bottom: 28px;
 }
 
 .filter label {
-  position: relative;
-  cursor: pointer;
-  color: #ffffff;
   padding-left: 40px;
+  position: relative;
+  color: #ffffff;
+  cursor: pointer;
+
 }
 
 .filter-option label::before {
@@ -883,10 +886,14 @@ a {
   margin: 0;
   font: inherit;
   width: 50px;
+  height: 30px;
   color: inherit;
   background: none;
   border: none;
   padding-left: 5px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
 }
 
 .price-controls .min-price {
@@ -953,7 +960,7 @@ a {
 /* Выравнтваем секцию в каталоге "НАЙДЕНО"*/
 .sorting-filter {
   margin: 0 auto;
-  padding: 21.24px 70px;
+  padding: 23px 70px 20px;
   display: flex;
   flex-wrap: nowrap;
   box-sizing: border-box;
@@ -1037,7 +1044,6 @@ a {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  dorder: 1px solid red;
 }
 .up-down li {
   margin: 0;
@@ -1090,6 +1096,7 @@ a {
   padding-left: 70px;
   padding-top: 29.5px;
   padding-bottom: 29.5px;
+  width: 1200;
   display: flex;
   flex-wrap: nowrap;
   box-sizing: border-box;
@@ -1104,15 +1111,17 @@ a {
 }
 
 .hotel-desc {
+  margin-left: 30px;
   width: 335px;
   display: inline-table;
   justify-content: flex-start;
-  margin-left: 30px;
+  background-color: #ffffff;
 }
 
 .hotel-desc h4 {
   margin-top: -5px;
   margin-bottom: -5px;
+  background-color: #ffffff;
 }
 
 .hotel-desc-info {
@@ -1131,7 +1140,7 @@ a {
   display: block;
   cursor: pointer;
   border: none;
-  background-color: inherit;
+  background-color: #ffffff;
 }
 
 .hotel-name:hover {
@@ -1148,6 +1157,7 @@ a {
   font-weight: 500;
   line-height: 21px;
   color: #333333;
+  background-color: #ffffff;
 }
 
 .hotel-info {
@@ -1161,23 +1171,7 @@ a {
 
 .hotel-info p {
   padding: 0;
-  margin-bottom: 14px;
-}
-
-.hotel-book {
-  margin: none;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-
-.hotel-book p {
-  padding: 0;
-  margin-bottom: 14px;
-  display: flex;
-  justify-content: flex-start;
+  margin-bottom: 12px;
 }
 
 /*Кнопка "ПОДРОБНЕЕ" в каталоге*/
@@ -1236,28 +1230,28 @@ a {
 
 /*Сетка рейтинга ОТЕЛЕЙ*/
 .hotel-rating {
+ margin-left: 40px;
  width: 520px;
  height: 90px;
  display: flex;
  justify-content: space-between;
  flex-direction: column;
- margin-left: 40px;
  background-color: #ffffff;
 }
 
 .hotel-star {
+ margin-left: 370px;
+ margin-top: 0px;
  width: 110px;
  display: flex;
  flex-direction: row;
  justify-content: flex-end;
  align-items: flex-start;
- margin-left: 370px;
- margin-top: 0px;
 }
 
 .hotel-rating-number {
   margin: 0;
-  margin-left: 404px;
+  margin-left: 410px;
   padding: 0;
   font-size: 14px;
   font-weight: normal;
