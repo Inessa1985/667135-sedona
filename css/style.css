@@ -231,19 +231,25 @@ a {
 }
 
 .main-titile {
-  display: flex;
+  margin: 0;
+  padding: 52px 0;
+  display: block;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
-  min-height: 216px;
+  /*min-height: 216px;*/
 }
 
 .main-titile h1 {
+  margin: 0;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
 }
 
 .main-titile p {
+  margin: 0;
+  margin-top: 34px;
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
@@ -303,7 +309,8 @@ a {
 .features-item .white {
   margin: 0;
   padding: 0;
-  display:flex;
+  width: 1200px;
+  display: flex;
 }
 
 .features-item .white-icon {
@@ -313,7 +320,7 @@ a {
   padding-right: 50px;
   padding-bottom: 64px;
   width: 400px;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -322,14 +329,32 @@ a {
 .icon {
   margin: 0;
   margin-bottom: 30px;
+  padding: 0 107px;
   height: 75px;
+  display: block;
+  justify-content: center;
   background-position: 162px 60px;
 }
 
+.icon img {
+  margin: 0;
+  padding: 0;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-souvenir img {
+  margin: 0;
+  padding: 0;
+  padding-left: 6px;
+  display: block;
+}
+
 /*Секция "№3...№4...№5..."*/
-.featuresb-alt {
+.features-alt {
   color: #000000;
-  display:flex;
+  display: flex;
   background-color: #eeeeee;
 }
 
@@ -339,8 +364,8 @@ a {
   padding-top: 38px;
   padding-bottom: 45px;
   width: 400px;
-  display:flex;
-  justify-content: flex-start;
+  display: block;
+  justify-content: center;
   flex-direction: column;
 }
 
