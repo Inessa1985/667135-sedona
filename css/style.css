@@ -271,7 +271,7 @@ a {
   padding-top: 35px;
   padding-left: 45px;
   padding-right: 45px;
-  padding-bottom: 52px;
+  padding-bottom: 54px;
   color: #ffffff;
   width: 400px;
   display: block;
@@ -318,7 +318,7 @@ a {
   padding-top: 63px;
   padding-left: 60px;
   padding-right: 50px;
-  padding-bottom: 64px;
+  padding-bottom: 66px;
   width: 400px;
   display: block;
   align-items: center;
@@ -362,7 +362,7 @@ a {
   margin: 0;
   padding: 0;
   padding-top: 38px;
-  padding-bottom: 45px;
+  padding-bottom: 47px;
   width: 400px;
   display: block;
   justify-content: center;
@@ -745,7 +745,7 @@ iframe {
 }
 
 .filter-form {
-  margin: 0 auto 0 68px;
+  margin: 0 auto 0 73px;
   padding: 0;
   padding-top: 25px;
   display: flex;
@@ -763,7 +763,7 @@ iframe {
 .infrast {
   margin: 0;
   padding: 0;
-  width: 240px;
+  width: 245px;
 }
 
 .infrast legend,
@@ -783,7 +783,7 @@ iframe {
 .type {
   margin: 0;
   padding: 0;
-  width: 500px;
+  width: 490px;
 }
 
 /*Фильтры*/
@@ -890,7 +890,7 @@ iframe {
   margin-bottom: 20px;
   position: relative;
   height: 36px;
-  width: 313px;
+  width: 310px;
   font-size: 0;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -985,7 +985,7 @@ iframe {
 /* Выравнтваем секцию в каталоге "НАЙДЕНО"*/
 .sorting-filter {
   margin: 0 auto;
-  padding: 23px 70px 20px;
+  padding: 23px 71px 20px;
   display: flex;
   flex-wrap: nowrap;
   box-sizing: border-box;
@@ -1004,7 +1004,7 @@ iframe {
 
 .sorting {
   padding: 0;
-  padding-left: 29px;
+  padding-left: 30px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 12px;
   font-weight: 600;
@@ -1012,7 +1012,7 @@ iframe {
   text-transform: uppercase;
   color: #000000;
   text-transform: uppercase;
-  width: 390px;
+  width: 353px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -1265,7 +1265,7 @@ iframe {
 }
 
 .hotel-star {
- margin-left: 370px;
+ margin-left: 365px;
  margin-top: 0px;
  width: 110px;
  display: flex;
@@ -1276,7 +1276,7 @@ iframe {
 
 .hotel-rating-number {
   margin: 0;
-  margin-left: 410px;
+  margin-left: 405px;
   padding: 0;
   font-size: 14px;
   font-weight: normal;
