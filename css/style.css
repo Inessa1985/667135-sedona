@@ -271,7 +271,7 @@ a {
   padding-top: 35px;
   padding-left: 45px;
   padding-right: 45px;
-  padding-bottom: 54px;
+  padding-bottom: 51px;
   color: #ffffff;
   width: 400px;
   display: block;
@@ -318,7 +318,7 @@ a {
   padding-top: 63px;
   padding-left: 60px;
   padding-right: 50px;
-  padding-bottom: 66px;
+  padding-bottom: 64px;
   width: 400px;
   display: block;
   align-items: center;
@@ -362,7 +362,7 @@ a {
   margin: 0;
   padding: 0;
   padding-top: 38px;
-  padding-bottom: 47px;
+  padding-bottom: 45px;
   width: 400px;
   display: block;
   justify-content: center;
@@ -786,7 +786,6 @@ iframe {
   width: 490px;
 }
 
-/*Фильтры*/
 .infrast-legend,
 .type-legend {
   font-family: "PT Sans", Arial, sans-serif;
